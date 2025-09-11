@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aximo || Responsive HTML 5 Template</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico"
+      type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!--- End favicon-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet">
+    <!-- End google font  -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/custom-font.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+
+    <!-- Code Editor  -->
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <style>
+  :root{
+    --accent-1: #1877f2; /* facebook */
+    --ig-grad-from: #fd1d1d;
+    --ig-grad-mid: #fcb045;
+    --ig-grad-to: #833ab4;
+    --card-bg: #ffffff;
+    --card-radius: 14px;
+    --shadow: 0 10px 30px rgba(20,20,30,0.08);
+    --text-muted: #556;
+  }
+
+  .lf-social { padding: 56px 20px; background: #fafbfc; text-align: center; }
+  .lf-social-title{ font-size: 1.9rem; margin: 0 0 6px; font-weight:700; }
+  .lf-social-sub { color: var(--text-muted); margin-bottom: 28px; }
+
+  .lf-social-cards { display:flex; gap:24px; justify-content:center; flex-wrap:wrap; }
+  .lf-card {
+    width: 300px; border-radius: calc(var(--card-radius) + 2px);
+    padding: 2px; /* thin gradient border */
+    background: linear-gradient(135deg, rgba(255,255,255,0.025), rgba(0,0,0,0.01));
+    box-shadow: none;
+    transition: transform .28s ease, box-shadow .28s ease;
+  }
+  .lf-card .lf-card-body{
+    background: var(--card-bg); padding:20px; border-radius: var(--card-radius); box-shadow: var(--shadow);
+  }
+  .lf-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(15,20,40,0.12); }
+
+  .lf-card-icon { width:70px; height:70px; margin: 0 auto 14px; display:flex; align-items:center; justify-content:center; border-radius:50%; }
+  .lf-card-icon svg{ width:36px; height:36px; display:block; }
+
+  .facebook .lf-card-icon{ background: linear-gradient(135deg, #235fa9, var(--accent-1)); }
+  .instagram .lf-card-icon{ background: linear-gradient(135deg, var(--ig-grad-from), var(--ig-grad-mid), var(--ig-grad-to)); }
+
+  .lf-card h3{ margin:0; font-size:1.1rem; }
+  .lf-handle{ margin:6px 0 12px; color:var(--text-muted); font-size:0.95rem; }
+
+  .lf-count{ display:flex; align-items:baseline; gap:8px; justify-content:center; margin-bottom:12px; color:var(--text-muted); }
+  .lf-count .count{ font-weight:700; font-size:1.05rem; color:#1e293b; }
+
+  .lf-btn{
+    display:inline-block; padding:10px 20px; border-radius:999px; text-decoration:none;
+    background: linear-gradient(45deg,#4c6ef5,#f63b89); color:white; font-weight:600;
+    transition: transform .18s ease, filter .18s ease;
+  }
+  .lf-btn:focus{ outline:3px solid rgba(59,130,246,0.18); outline-offset:3px; }
+  .lf-btn:hover{ transform: translateY(-3px); filter:brightness(1.03); }
+
+  /* responsive */
+  @media (max-width:720px){
+    .lf-social { padding:36px 16px; }
+    .lf-social-cards { gap:14px; }
+    .lf-card{ width:100%; max-width:420px; }
+  }
+
+  /* respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .lf-card, .lf-btn { transition: none; transform: none; }
+  }
+</style>
+
+  </head>
+
+  <body class="light">
+
+    <div class="aximo-preloader-wrap">
+      <div class="aximo-preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <header class="site-header aximo-header-section aximo-header1 dark-bg"
+      id="sticky-menu">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="index.html">
+              <img src="assets/images/logo/logo-white.svg" alt
+                class="light-version-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Home <i
+                      class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="index.html">
+                        <span class="menu-item-text">Design Agency</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-02.html">
+                        <span class="menu-item-text">Startup Agency</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-03.html">
+                        <span class="menu-item-text">SEO Agency</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-04.html">
+                        <span class="menu-item-text">Business
+                          Consultation</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-05.html">
+                        <span class="menu-item-text">Digital Marketing</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-06.html">
+                        <span class="menu-item-text">Interior Design
+                          Agency</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-07.html">
+                        <span class="menu-item-text">Advertising agency</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="about-us.html" class="nav-link-item">About Us</a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Pages <i
+                      class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="about-us.html">
+                        <span class="menu-item-text">About Us</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="pricing.html">
+                        <span class="menu-item-text">Pricing</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">blog
+                        <i class="fas fa-angle-down"></i></a>
+                      <ul class="sub-menu shape-none" id="submenu-3">
+                        <li class="sub-menu--item">
+                          <a href="blog.html">
+                            <span class="menu-item-text">Our Blog</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="blog-grid.html">
+                            <span class="menu-item-text">Blog grid</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="single-blog.html">
+                            <span class="menu-item-text">blog details</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3"
+                        class="drop-trigger">Service<i
+                          class="fas fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu shape-none" id="submenu-4">
+                        <li class="sub-menu--item">
+                          <a href="service.html">
+                            <span class="menu-item-text">service</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="single-service.html">
+                            <span class="menu-item-text">service details</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Team<i
+                          class="fas fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu shape-none" id="submenu-5">
+                        <li class="sub-menu--item">
+                          <a href="team.html">
+                            <span class="menu-item-text">team</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="single-team.html">
+                            <span class="menu-item-text">team details</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3"
+                        class="drop-trigger">Portfolio<i
+                          class="fas fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu shape-none" id="submenu-6">
+                        <li class="sub-menu--item">
+                          <a href="portfolio-02.html">
+                            <span class="menu-item-text">Portfolio One
+                              Column</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="portfolio-01.html">
+                            <span class="menu-item-text">Portfolio Two
+                              Column</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="single-portfolio.html">
+                            <span class="menu-item-text">Single Portfolio</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3"
+                        class="drop-trigger">Utility<i
+                          class="fas fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu shape-none" id="submenu-7">
+                        <li class="sub-menu--item">
+                          <a href="faq.html">
+                            <span class="menu-item-text">faq</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="errors-404.html">
+                            <span class="menu-item-text">Error 404</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="testimonial.html">
+                            <span class="menu-item-text">testimonial</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="coming-soon.html">
+                            <span class="menu-item-text">Coming Soon</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3"
+                        class="drop-trigger">Account<i
+                          class="fas fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu shape-none" id="submenu-8">
+                        <li class="sub-menu--item">
+                          <a href="sign-up.html">
+                            <span class="menu-item-text">sign up</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="sign-in.html">
+                            <span class="menu-item-text">sign in</span>
+                          </a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="reset-password.html">
+                            <span class="menu-item-text">reset password</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Blog <i
+                      class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu" id="submenu-9">
+                    <li class="sub-menu--item">
+                      <a href="blog.html">
+                        <span class="menu-item-text">blog</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="blog-grid.html">
+                        <span class="menu-item-text">Blog grid</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="single-blog.html">
+                        <span class="menu-item-text">blog Details</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="contact-us.html" class="nav-link-item">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+            <a class="aximo-default-btn pill aximo-header-btn"
+              href="donate.html">
+              Donate
+            </a>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger light">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!--End landex-header-section -->
+
+    <div class="aximo-breadcrumb">
+      <div class="container">
+        <h1 class="post__title">Contact Us</h1>
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page"> Contact Us</li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+    <!-- End breadcrumb -->
+
+    <div class="section aximo-section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="aximo-section-title">
+              <h2>
+                <span class="aximo-title-animation">
+                  Contact us to make
+                  <span class="aximo-title-icon">
+                    <img src="assets/images/v1/star2.png" alt>
+                  </span>
+                </span>
+                an impact
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 order-lg-2">
+            <div class="aximo-contact-thumb wow fadeInRight"
+              data-wow-delay="0.1s">
+              <img src="assets/images/contact/contact-thumb.png" alt>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="aximo-main-form">
+              <form action="#">
+                <div class="aximo-main-field">
+                  <label>Your name</label>
+                  <input type="text">
+                </div>
+                <div class="aximo-main-field">
+                  <label>Email Address</label>
+                  <input type="email">
+                </div>
+                <div class="aximo-main-field">
+                  <label>Phone No</label>
+                  <input type="text">
+                </div>
+                <div class="aximo-main-field">
+                  <label>Write your message here...</label>
+                  <textarea name="textarea"></textarea>
+                </div>
+                <button id="aximo-main-btn" type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End section -->
+
+    <div class="aximo-contact-info-section">
+      <div class="container">
+        <div class="aximo-contact-info-title">
+          <h2>
+            <span class="aximo-title-animation">
+              Contact Information
+              <span class="aximo-title-icon">
+                <img src="assets/images/v1/star2.png" alt>
+              </span>
+            </span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <a href>
+              <div class="aximo-contact-info-box wow fadeInUpX"
+                data-wow-delay="0.1s">
+                <div class="aximo-contact-info-icon">
+                  <img src="assets/images/icon/call2.svg" alt>
+                </div>
+                <div class="aximo-contact-info-data">
+                  <span>Call us</span>
+                  <p>+254-234-6532-789</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <a href>
+              <div class="aximo-contact-info-box wow fadeInUpX"
+                data-wow-delay="0.2s">
+                <div class="aximo-contact-info-icon">
+                  <img src="assets/images/icon/email.svg" alt>
+                </div>
+                <div class="aximo-contact-info-data">
+                  <span>Call us</span>
+                  <p>lindafutureyouthgroup@gmail</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="aximo-contact-info-box wow fadeInUpX"
+              data-wow-delay="0.3s">
+              <div class="aximo-contact-info-icon">
+                <img src="assets/images/icon/map.svg" alt>
+              </div>
+              <div class="aximo-contact-info-data">
+                <span>Office address</span>
+                <p>Thika East</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+    <!-- Social Media Section -->
+    <!-- Follow Us — Premium Social Cards (Facebook + Instagram) -->
+    <section class="lf-social" aria-labelledby="lf-social-title">
+      <div class="container">
+        <h2 id="lf-social-title" class="lf-social-title">Follow Us on Social
+          Media</h2>
+        <p class="lf-social-sub">Join our community — updates, events, mental
+          health tips and ways to support Linda Future Initiative.</p>
+
+        <div class="lf-social-cards" role="list">
+          <!-- Facebook -->
+          <div class="lf-card" role="listitem" aria-labelledby="fb-title">
+            <div class="lf-card-icon facebook" aria-hidden="true">
+              <!-- inline svg -->
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path
+                  d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24h11.495v-9.294H9.847v-3.622h2.973V8.413c0-2.937 1.793-4.542 4.415-4.542 1.254 0 2.332.093 2.645.135v3.067l-1.815.001c-1.425 0-1.701.678-1.701 1.67v2.188h3.401l-.443 3.622h-2.958V24h5.797C23.4 24 24 23.4 24 22.676V1.325C24 .6 23.4 0 22.675 0z" />
+              </svg>
+            </div>
+
+            <div class="lf-card-body">
+              <h3 id="fb-title">Facebook</h3>
+              <p class="lf-handle">Lindafutureinitiative</p>
+
+              <!-- optional: follower count (replace data-target with real number) -->
+
+              <a class="lf-btn"
+                href="https://www.facebook.com/share/173Gcfedjq/"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Like Linda Future Initiative on Facebook">
+                Like Our Page
+              </a>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <div class="lf-card" role="listitem" aria-labelledby="ig-title">
+            <div class="lf-card-icon instagram" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </div>
+
+            <div class="lf-card-body">
+              <h3 id="ig-title">Instagram</h3>
+              <p class="lf-handle">@lindafutureinitiative</p>
+
+              <a class="lf-btn"
+                href="https://www.instagram.com/lindafutureinitiative?igsh=bmt1bDNrazY0aGJm"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Follow Linda Future Initiative on Instagram">
+                Follow Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end section -->
+
+    <div class="section">
+      <div class="container">
+        <div class="aximo-map-wrap" style="text-align: center;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.029893812452!2d37.080!3d-1.038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4696d8f9d7d7%3A0x1234567890abcdef!2sLinda%20Future%20Initiative!5e0!3m2!1sen!2ske!4v1699999999999"
+            width="100%"
+            height="400"
+            style="border:0; border-radius: 12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- end section -->
+
+    <div class="section aximo-section-padding">
+      <div class="container">
+        <div class="aximo-section-title center">
+          <h2>
+            FAQs about
+            <span class="aximo-title-animation">
+              our work and impact
+              <span class="aximo-title-icon">
+                <img src="assets/images/v1/star2.png" alt>
+              </span>
+            </span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="aximo-accordion-normal-wrap responsive-margin">
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt>
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>Who benefits from your programs?</h3>
+                  <p>Our programs target young people, vulnerable students, and
+                    local communities seeking skills, mentorship, and
+                    sustainable livelihoods.</p>
+                </div>
+              </div>
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt>
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>How do you fund your initiatives?</h3>
+                  <p>We rely on partnerships, grants, community contributions,
+                    and collaboration with organizations aligned with our
+                    mission.</p>
+                </div>
+              </div>
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt>
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>Can I volunteer or collaborate with you?</h3>
+                  <p>Yes! We welcome volunteers, partners, and organizations
+                    interested in advancing youth empowerment, peacebuilding,
+                    and climate action.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="aximo-accordion-normal-wrap">
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt>
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>Do you provide mentorship or training?</h3>
+                  <p>>Absolutely. We offer mentorship, skills development
+                    workshops, and support programs to equip young people for
+                    self-reliance.</p>
+                </div>
+              </div>
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt>
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>How can I support Linda Future Initiative?</h3>
+                  <p>You can support us by volunteering, donating, partnering
+                    with our programs, or spreading the word about our
+                    mission.</p>
+                </div>
+              </div>
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt>
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>Where are your activities currently based?</h3>
+                  <p>Our core operations are in Thika East, Kenya, but we aim to
+                    expand our impact to other regions in the near future.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End section -->
+
+    <!-- Footer  -->
+
+    <footer class="aximo-footer-section dark-bg">
+      <div class="container">
+        <div class="aximo-footer-top aximo-section-padding">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="aximo-default-content light position-relative">
+                <h2>
+                  <span class="aximo-title-animation">
+                    Join
+                  </span>
+                  Us
+                </h2>
+                <p>Through collaboration with partners and well-wishers, we turn
+                  shared visions into sustainable initiatives that empower
+                  vulnerable groups and build stronger communities.</p>
+                <div class="aximo-info-wrap">
+                  <div class="aximo-info">
+                    <ul>
+                      <li>Give us a call:</li>
+                      <li><a href>(+254) 123-7890</a></li>
+                    </ul>
+                  </div>
+                  <div class="aximo-info">
+                    <ul>
+                      <li>Send us an email:</li>
+                      <li><a href>lindafutureyouthgroup@gmail.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="aximo-social-icon social-large">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=lindafutureyouthgroup@gmail.com"
+                        target="_blank">
+                        <i class="icon-message"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/share/173Gcfedjq/"
+                        target="_blank">
+                        <i class="icon-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/lindafutureinitiative?igsh=bmt1bDNrazY0aGJm/"
+                        target="_blank">
+                        <i class="icon-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="aximo-hero-shape aximo-footer-shape">
+                  <img src="assets/images/v1/shape1.png" alt>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="aximo-form-wrap">
+                <h4>Send us a message</h4>
+                <form action="#">
+                  <div class="aximo-form-field">
+                    <input type="text" placeholder="Your name">
+                  </div>
+                  <div class="aximo-form-field">
+                    <input type="email" placeholder="Your email address">
+                  </div>
+                  <div class="aximo-form-field">
+                    <input type="text" placeholder="+254-234-6849">
+                  </div>
+                  <div class="aximo-form-field">
+                    <textarea name="textarea"
+                      placeholder="Write your message here..."></textarea>
+                  </div>
+                  <button id="aximo-submit-btn" type="submit">Send message
+                    <span><img src="assets/images/icon/arrow-right3.svg"
+                        alt></span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aximo-footer-bottom">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="aximo-footer-logo">
+                <a href>
+                  <img src="assets/images/logo/logo-white.svg" alt>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="aximo-copywright one">
+                <p> &copy; © 2025 Linda Future Initiative. All Rights
+                  Reserved.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/menu/menu.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/skill-bar.js"></script>
+    <script src="assets/js/infinite-slider.js"></script>
+    <script src="assets/js/image-resizing.js"></script>
+    <!-- <script src="assets/js/scrollsmooth.js"></script> -->
+    <script src="assets/js/faq.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
