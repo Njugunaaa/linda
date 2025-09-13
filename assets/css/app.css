@@ -23,11 +23,11 @@
 --heading-color5: #2C2C2C;
 --heading-color6: #0B1040;
 --body-color: #0C0C0C;
---accent-color: #BFF747;
+--light-blue-color: #BFF747;
 --white-smoke: #FDFDE1;
 --white-color: #ffffff;
---orange-color: #FF4612;
---orange-color2: #FF8064;
+--red-color: #FF4612;
+--red-color2: #FF8064;
 --corn-color: #F4B905;
 --green-color: #073D30;
 --green-color2: #02854C;
@@ -41,8 +41,8 @@
 --dark-bg2: #2C2C2C;
 --dark-bg3: #0B1040;
 --white-bg: #ffffff;
---orange-bg: #FF4612;
---orange-bg2: #FF8064;
+--red-bg: #FF4612;
+--red-bg2: #FF8064;
 --accent-bg: #BFF747;
 --yellow-bg: #FFE757;
 --corn-bg: #F4B905;
@@ -1873,8 +1873,8 @@ blockquote {
   background-color: var(--light-bg8) !important;
 }
 
-.bg-orange {
-  background-color: var(--orange-bg) !important;
+.bg-red {
+  background-color: var(--red-bg) !important;
 }
 
 .z-index {
@@ -1949,7 +1949,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
   font-size: 16px;
 }
 .aximo-sidemenu-column .aximo-info ul li {
-  color: var(--orange-color2);
+  color: var(--red-color2);
 }
 
 .aximo-sidemenu-thumb img {
@@ -1981,7 +1981,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
   align-items: center;
   justify-content: center;
   border-radius: 0;
-  background-color: var(--orange-color2);
+  background-color: var(--red-color2);
 }
 
 .active .aximo-sidemenu-close {
@@ -2135,7 +2135,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 }
 .aximo-info ul li {
   font-size: 21px;
-  color: var(--accent-color);
+  color: var(--light-blue-color);
 }
 .aximo-info ul li a {
   color: var(--white-smoke);
@@ -2199,13 +2199,13 @@ header.aximo-header-section.aximo-header7.sticky-menu {
   transition: all 0.4s;
 }
 .aximo-footer-menu ul li a:hover {
-  color: var(--orange-color);
+  color: var(--red-color);
 }
 .aximo-footer-menu.light-one ul li a {
   color: var(--light-color3);
 }
 .aximo-footer-menu.light-one ul li a:hover {
-  color: var(--orange-color2);
+  color: var(--red-color2);
 }
 .aximo-footer-menu.light-two ul li a {
   color: var(--light-color5);
@@ -2301,7 +2301,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 }
 .aximo-contact-info2 ul li a i {
   font-size: 20px;
-  color: var(--orange-color2);
+  color: var(--red-color2);
   margin-right: 10px;
 }
 .aximo-contact-info2.info3 ul li a i {
@@ -2453,7 +2453,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
   transition: all 0.4s ease-in-out;
   overflow: hidden;
   color: var(--light-bg2) !important;
-  background-color: var(--orange-bg);
+  background-color: var(--red-bg);
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -2481,7 +2481,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
   background-color: var(--blue-bg);
 }
 .aximo-default-btn.blue-btn:hover {
-  background-color: var(--orange-bg2);
+  background-color: var(--red-bg2);
 }
 .aximo-default-btn.corn-btn {
   color: var(--green-color) !important;
@@ -2513,7 +2513,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
   color: var(--heading-color) !important;
   border: 2px solid var(--heading-color);
   box-shadow: 0px 4px 0px 0px var(--white-smoke);
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 .aximo-default-btn.aximo-header-btn:hover {
   box-shadow: none;
@@ -2740,7 +2740,7 @@ textarea::placeholder { /* Most modern browsers support this now. */
   border: 1px solid #ccc !important;
 }
 .aximo-form-field input:focus, .aximo-form-field input:focus, .aximo-form-field textarea:focus, .aximo-form-field textarea:focus {
-  border: 1px solid var(--accent-color) !important;
+  border: 1px solid var(--light-blue-color) !important;
 }
 .aximo-form-field input::-webkit-input-placeholder, .aximo-form-field input::-webkit-input-placeholder, .aximo-form-field textarea::-webkit-input-placeholder, .aximo-form-field textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: #ccc;
@@ -2782,7 +2782,7 @@ textarea::placeholder { /* Most modern browsers support this now. */
   font-weight: 700;
   border-radius: 50px;
   border: 2px solid var(--dark-bg);
-  background: var(--accent-bg);
+  background: red;
   box-shadow: 0px 4px 0px 0px #FDFDE1;
   transition: all 0.4s;
   padding-left: 40px;
@@ -2915,7 +2915,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
   border: 2px solid #999 !important;
 }
 .aximo-subscription input:focus {
-  border: 2px solid var(--orange-bg) !important;
+  border: 2px solid var(--red-bg) !important;
 }
 .aximo-subscription input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: var(--heading-color2);
@@ -2952,7 +2952,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
   border: none !important;
   padding: 0 !important;
   color: var(--light-bg2);
-  background-color: var(--orange-bg);
+  background-color: var(--red-bg);
   transition: all 0.4s;
   overflow: hidden;
 }
@@ -2983,7 +2983,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
   border: 2px solid var(--light-color3) !important;
 }
 .aximo-subscription2 input:focus {
-  border: 2px solid var(--orange-bg2) !important;
+  border: 2px solid var(--red-bg2) !important;
 }
 @media (max-width: 767px) {
   .aximo-subscription2 input {
@@ -3032,7 +3032,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
   transition: all 0.4s;
 }
 #aximo-subscription-btn2:hover {
-  background-color: var(--orange-bg2);
+  background-color: var(--red-bg2);
 }
 #aximo-subscription-btn2 .aximo-label-up {
   display: block;
@@ -3131,7 +3131,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 }
 #comment-btn:hover {
   color: var(--heading-color);
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 @media (max-width: 767px) {
   #comment-btn {
@@ -3178,7 +3178,7 @@ h1.post__title {
   padding: 0 20px;
   position: relative;
   display: inline-block;
-  color: var(--accent-color);
+  color: var(--light-blue-color);
 }
 @media (max-width: 767px) {
   .breadcrumbs ul li {
@@ -3228,9 +3228,9 @@ h1.post__title {
 .aximo-navigation span.current,
 .page-links .current {
   cursor: not-allowed;
-  background-color: var(--accent-color);
+  background-color: var(--light-blue-color);
   color: var(--heading-color);
-  border-color: var(--accent-color);
+  border-color: var(--light-blue-color);
 }
 
 .aximo-navigation a,
@@ -3253,9 +3253,9 @@ h1.post__title {
 
 .aximo-navigation a:hover,
 .page-links a:hover {
-  background-color: var(--accent-color);
+  background-color: var(--light-blue-color);
   color: var(--heading-color);
-  border-color: var(--accent-color);
+  border-color: var(--light-blue-color);
 }
 
 .aximo-hero-section {
@@ -3428,7 +3428,7 @@ h1.post__title {
   justify-content: space-between;
   color: var(--heading-color) !important;
   border: 2px solid var(--dark-bg);
-  background-color: var(--accent-bg);
+  background-color: red;
   box-shadow: 0px 4px 0px 0px var(--white-smoke);
   transition: all 0.4s;
 }
@@ -3970,7 +3970,7 @@ button#aximo-hero-subscription-btn:hover .aximo-label-up {
 .aximo-hero-content4 p span {
   font-size: 24px;
   font-weight: 600;
-  color: var(--orange-color2);
+  color: var(--red-color2);
 }
 .aximo-hero-content4 h1 {
   font-size: 120px;
@@ -4370,7 +4370,7 @@ span.aximo-hero-shape-title2 {
   border: none;
 }
 .aximo-counter-data h2 {
-  color: var(--accent-color);
+  color: var(--light-blue-color);
   margin-bottom: 5px;
 }
 .aximo-counter-data p {
@@ -4502,7 +4502,7 @@ span.aximo-hero-shape-title2 {
   border-radius: 10px;
   padding: 100px 25px;
   margin-bottom: 24px;
-  background-color: var(--orange-bg2);
+  background-color: var(--red-bg2);
 }
 @media (max-width: 767px) {
   .aximo-counter-wrap4 {
@@ -4789,7 +4789,7 @@ p.aximo-skillbar-lable {
   position: absolute;
   left: 0;
   margin-bottom: 0px;
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 
 .aximo-team-wrap3 {
@@ -4848,7 +4848,7 @@ p.aximo-skillbar-lable {
   border: 2px solid var(--heading-color);
 }
 .aximo-iconbox-wrap:hover {
-  background-color: var(--accent-bg);
+  background-color: red;
   box-shadow: 4px 4px 0 0 var(--heading-color);
 }
 .aximo-iconbox-icon {
@@ -4937,7 +4937,7 @@ p.aximo-skillbar-lable {
   border: 2px solid var(--heading-color3);
 }
 .aximo-iconbox-wrap4:hover .aximo-icon path {
-  stroke: var(--orange-color2);
+  stroke: var(--red-color2);
 }
 .aximo-iconbox-icon4 {
   margin-bottom: 30px;
@@ -5102,12 +5102,12 @@ p.aximo-skillbar-lable {
   border-top: 2px solid #E6E6E6;
 }
 .aximo-numberbox-wrap:hover {
-  border-top: 2px solid var(--orange-bg2);
+  border-top: 2px solid var(--red-bg2);
 }
 .aximo-numberbox-wrap:hover .aximo-numberbox-number {
   color: var(--light-color3);
-  border: 1px solid var(--orange-bg2);
-  background-color: var(--orange-bg2);
+  border: 1px solid var(--red-bg2);
+  background-color: var(--red-bg2);
 }
 .aximo-numberbox-number {
   line-height: 1;
@@ -5188,7 +5188,7 @@ a.aximo-service-icon:hover {
   transform: rotate(180deg);
 }
 .aximo-accordion-item.open {
-  background-color: var(--accent-bg);
+  background-color: red;
   box-shadow: 3px 3px 0 0 var(--dark-bg);
 }
 .aximo-accordion-item.open .aximo-accordion-body {
@@ -6194,7 +6194,7 @@ img.aximo-video-circle {
   color: var(--heading-color);
 }
 .aximo-social-icon ul li a:hover {
-  background-color: var(--accent-bg);
+  background-color: red;
   box-shadow: 0 2px 0 0 var(--white-smoke);
   border: 1px solid var(--dark-bg);
 }
@@ -6232,7 +6232,7 @@ img.aximo-video-circle {
   color: var(--heading-color2);
 }
 .aximo-social-icon2 ul li a:hover i {
-  color: var(--orange-color);
+  color: var(--red-color);
 }
 .aximo-social-icon2.right {
   text-align: right;
@@ -6277,7 +6277,7 @@ img.aximo-video-circle {
 }
 .aximo-social-icon3 ul li a:hover {
   box-shadow: none;
-  background-color: var(--orange-bg2);
+  background-color: var(--red-bg2);
 }
 .aximo-social-icon3 ul li a svg path {
   fill: var(--light-color3);
@@ -6387,7 +6387,7 @@ img.aximo-video-circle {
   white-space: nowrap;
   padding: 0 24px;
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: var(--light-blue-color);
 }
 @media (max-width: 767px) {
   .aximo-auto-slider-item h3 {
@@ -6568,7 +6568,7 @@ img.aximo-video-circle {
 .aximo-brandlogo-title2 p {
   font-size: 24px;
   font-weight: 600;
-  color: var(--orange-color2);
+  color: var(--red-color2);
 }
 .aximo-brandlogo-item {
   margin: 0 40px;
@@ -6733,13 +6733,13 @@ img.aximo-video-circle {
 }
 .aximo-pricing-btn:hover {
   color: var(--light-color1) !important;
-  background-color: var(--orange-bg);
-  border: 2px solid var(--orange-bg);
+  background-color: var(--red-bg);
+  border: 2px solid var(--red-bg);
 }
 .aximo-pricing-btn.active {
   color: var(--light-color1) !important;
-  background-color: var(--orange-bg);
-  border: 2px solid var(--orange-bg);
+  background-color: var(--red-bg);
+  border: 2px solid var(--red-bg);
 }
 .aximo-pricing-btn.active:hover {
   background-color: var(--dark-bg);
@@ -6803,16 +6803,16 @@ img.aximo-video-circle {
 }
 .aximo-pricing-btn2:hover {
   color: var(--heading-color) !important;
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 .aximo-pricing-btn2.active {
   color: var(--heading-color) !important;
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 .aximo-pricing-btn2.active:hover {
   color: var(--white-smoke) !important;
   background-color: var(--dark-bg);
-  border: 2px solid var(--accent-bg);
+  border: 2px solid red;
 }
 
 .aximo-shape {
@@ -7108,7 +7108,7 @@ img.aximo-video-circle {
   transition: all 0.4s;
 }
 .aximo-project-icon:hover svg path {
-  stroke: var(--accent-color);
+  stroke: var(--light-blue-color);
 }
 
 .aximo-project-slider .swiper-pagination {
@@ -7142,7 +7142,7 @@ img.aximo-video-circle {
 }
 
 .aximo-project-slider .swiper-pagination-bullet-active {
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 
 .aximo-project-section {
@@ -7393,7 +7393,7 @@ img.aximo-video-circle {
   position: absolute;
   transition: all 0.4s;
   transform: translate(-50%, -50%);
-  background-color: var(--accent-bg);
+  background-color: red;
   border: 2px solid var(--dark-bg);
 }
 @media (max-width: 767px) {
@@ -7648,7 +7648,7 @@ img.aximo-video-circle {
   color: var(--light-color1);
 }
 .aximo-service-increase-row:hover .aximo-service-increase-icon i {
-  color: var(--orange-color);
+  color: var(--red-color);
 }
 .aximo-service-increase-row:last-child .aximo-service-increase-item {
   border: none;
@@ -7967,10 +7967,10 @@ button#aximo-account-btn {
   margin: 50px 0;
   background-color: var(--dark-bg);
 }
-button#aximo-account-btn:hover {
+/* button#aximo-account-btn:hover {
   color: var(--heading-color);
-  background-color: var(--accent-bg);
-}
+  background-color: red;
+} */
 
 .aximo-or {
   z-index: 0;
@@ -8094,7 +8094,7 @@ a.aximo-connect-login img {
   font-size: 24px;
   color: var(--white-smoke);
   transform: translateY(-50%);
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 
 .z-index {
@@ -8190,7 +8190,7 @@ a.aximo-connect-login img {
   margin-bottom: 20px;
   display: block;
   font-weight: 600;
-  color: var(--orange-color2);
+  color: var(--red-color2);
 }
 
 .aximo-section-title {
@@ -8641,19 +8641,19 @@ a.aximo-connect-login img {
 }
 
 /*1.3 pages css*/
-.aximo-about-section.bg-orange {
+.aximo-about-section.bg-red {
   padding: 125px 0 130px;
   margin-top: 100px;
   position: relative;
 }
 @media (max-width: 991px) {
-  .aximo-about-section.bg-orange {
+  .aximo-about-section.bg-red {
     padding: 100px 0;
     margin-top: 0;
   }
 }
 @media (max-width: 767px) {
-  .aximo-about-section.bg-orange {
+  .aximo-about-section.bg-red {
     padding: 80px 0;
   }
 }
@@ -8770,7 +8770,7 @@ a.aximo-connect-login img {
   height: 100%;
   position: absolute;
   transition: all 0.4s;
-  background-color: var(--orange-bg2);
+  background-color: var(--red-bg2);
 }
 .aximo-instagram-thumb:hover:before {
   opacity: 1;
@@ -9249,10 +9249,10 @@ a.aximo-connect-login img {
   transform: scale(1.1);
 }
 .aximo-blog-wrap:hover .aximo-blog-btn {
-  color: var(--orange-color2);
+  color: var(--red-color2);
 }
 .aximo-blog-wrap:hover .aximo-blog-btn svg path {
-  stroke: var(--orange-color2);
+  stroke: var(--red-color2);
 }
 .aximo-blog-thumb {
   overflow: hidden;
@@ -9327,8 +9327,8 @@ a.aximo-connect-login img {
 }
 .aximo-blog-meta ul li a:hover {
   color: var(--white-smoke);
-  background-color: var(--orange-bg2);
-  border: 1px solid var(--orange-bg2);
+  background-color: var(--red-bg2);
+  border: 1px solid var(--red-bg2);
 }
 
 .aximo-blog-wrap2 {
@@ -9466,8 +9466,8 @@ a.aximo-connect-login img {
 }
 
 .post-category a:hover {
-  background-color: var(--accent-bg);
-  border: 1px solid var(--accent-bg);
+  background-color: red;
+  border: 1px solid red;
 }
 
 .post-date {
@@ -9613,7 +9613,7 @@ a.post-read-more:hover img {
 .widget .tagcloud a:hover,
 .widget .wp-block-tag-cloud a:hover,
 .wp-block-tag-cloud a:hover {
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 
 .wp-block-search__inside-wrapper {
@@ -9838,7 +9838,7 @@ a.comment-reply {
 }
 #aximo-main-btn:hover {
   color: var(--heading-color);
-  background-color: var(--accent-bg);
+  background-color: red;
 }
 
 .aximo-contact-thumb {
@@ -9927,7 +9927,7 @@ a.comment-reply {
 }
 .aximo-loading-dots--dot {
   animation: dot-keyframes 1.5s infinite ease-in-out;
-  background-color: var(--accent-bg);
+  background-color: red;
   border-radius: 10px;
   display: inline-block;
   height: 12px;
@@ -9982,7 +9982,7 @@ a.comment-reply {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: var(--accent-color);
+  background: var(--light-blue-color);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
