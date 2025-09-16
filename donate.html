@@ -12,9 +12,9 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!--- End favicon-->
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"> -->
     <!-- End google font  -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -43,108 +43,98 @@
       </div>
     </div>
 
-    <header
-      class="site-header site-header--menu-center aximo-header-section aximo-header2 bg-light2"
-      id="sticky-menu">
-      <div class="container">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="index-02.html">
-              <img src="assets/images/logo/LINDA-LOGO.png" alt
-                class="light-version-logo">
-            </a>
-          </div>
-          <div class="menu-block-wrapper">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
-                </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-              <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="index-02.html" class="nav-link-item drop-trigger">Home</i></a>
-                </li>
-                <li class="nav-item">
-                  <a href="about-us.html" class="nav-link-item">About Us</a>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger">Our Programmes <i
-                      class="fas fa-angle-down"></i></a>
-                  <ul class="sub-menu" id="submenu-2">
-                    <li class="sub-menu--item">
-                      <a href="service.html">
-                        <span class="menu-item-text">Programs</span>
-                      </a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="single-service.html">
-                        <span class="menu-item-text">Program details</span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger">Blog <i
-                      class="fas fa-angle-down"></i></a>
-                  <ul class="sub-menu" id="submenu-9">
-                    <li class="sub-menu--item">
-                      <a href="blog.html">
-                        <span class="menu-item-text">blog</span>
-                      </a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="single-blog.html">
-                        <span class="menu-item-text">blog Details</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="contact-us.html" class="nav-link-item">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <header 
+  id="sticky-menu" 
+  style="display:flex; justify-content:center; padding:5px 0; background:transparent; position:fixed; top:0; left:0; width:100%; z-index:999;"
+>
+  <div 
+    style="
+      width:65%; /* reduced from 75% */
+      background-color:#fdf6e3; 
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between; 
+      padding:6px 18px; 
+      border-radius:6px; 
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    "
+  >
+    <!-- Logo -->
+    <div style="margin-left:70px;"> <!-- added margin to push logo right -->
+      <a href="index-02.html" style="display:flex; align-items:center; text-decoration:none;">
+        <img 
+          src="assets/images/logo/LINDA-LOGO.png" 
+          alt="Logo" 
+          style="width:160px; height:70px; object-fit:cover; margin-right:18px;"
+        >
+      </a>
+    </div>
 
-          <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-          <a class="aximo-default-btn pill aximo-header-btn" href="contact-us.html">
-            Contact Us
-          </a>
-        </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
+    <!-- Navigation Links -->
+    <ul 
+      style="
+        list-style:none; 
+        display:flex; 
+        gap:25px; 
+        margin:0; 
+        padding:0; 
+        font-family:sans-serif; 
+        font-weight:400;
+      "
+    >
+      <li><a href="index-02.html" style="text-decoration:none; color:#333;">Home</a></li>
+      <li><a href="about-us.html" style="text-decoration:none; color:#333;">About Us</a></li>
+      <li><a href="single-service.html" style="text-decoration:none; color:#333;">Programmes</a></li>
+      <li><a href="contact-us.html" style="text-decoration:none; color:#333;">Contact</a></li>
+    </ul>
+    <button></button>
+
+    <!-- Button -->
+    <!--<div>
+      <a 
+        href="contact-us.html" 
+        style="
+          background-color:#f50404; 
+          color:#fff; 
+          padding:6px 14px; 
+          border-radius:18px; 
+          text-decoration:none; 
+          font-weight:400;
+          font-family:sans-serif;
+        "
+      >
+        Donate
+      </a>
+    </div>-->
+  </div>
+</header>
+
+
+
+
+
+
     <!--End landex-header-section -->
 
-    <div class="aximo-breadcrumb">
-      <div class="container">
-        <h1 class="post__title">Donate</h1>
-        <nav class="breadcrumbs">
-          <ul>
-            <li><a href="index-02.html">Home</a></li>
-            <li aria-current="page" style="color:#05abe8 !important">Donate</li>
-          </ul>
-        </nav>
-
-      </div>
-    </div>
+  <div class="aximo-breadcrumb" 
+     style="margin-top:100px; margin-bottom:0px;  padding:10px 0; text-align:center; background-color:#fff;">
+  <div class="container">
+    <nav class="breadcrumbs" style="display:inline-block; margin:0; padding:0;">
+      <ul style="list-style:none; margin:0; padding:0; display:flex; gap:8px; justify-content:center; font-size:16px; font-weight:400;">
+        <li>
+          <a href="index-02.html" style="text-decoration:none; color:#333;">Home</a>
+        </li>
+        <li aria-current="page" style="color:#05abe8; padding: 0px;">› Donate</li>
+      </ul>
+    </nav>
+  </div>
+</div>
     <!-- End breadcrumb -->
 
     <div class="section aximo-section-padding6">
       <div class="container">
         <div class="aximo-section-title center title-description">
-          <h2>
+          <h2 style="font-size: 50px;">
             <span class="aximo-title-animation">
               Support Our Mission
               <span class="aximo-title-icon">
@@ -155,7 +145,7 @@
           </h2>
           <p>
             At <strong>Linda Future Initiative</strong>, we believe every young
-            person deserves the chance to thrive — mentally, physically, and
+            person deserves the chance to thrive  mentally, physically, and
             socially.
             Every shilling you give brings us closer to a society where rural
             youth are empowered, educated, and resilient.

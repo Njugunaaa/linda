@@ -11,7 +11,7 @@
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <!--- End favicon-->
 
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap" rel="stylesheet"> -->
   <!-- End google font  -->
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -44,108 +44,134 @@
 
 
 
-  <header class="site-header aximo-header-section aximo-header1 dark-bg" id="sticky-menu"style=" background-color:white !important; color: black !important;" >
-    <div class="container">
-      <nav class="navbar site-navbar">
-        <!-- Brand Logo-->
-        <div class="brand-logo">
-            <a href="index-02.html">
-              <img src="assets/images/logo/LINDA-LOGO.png" alt
-                class="light-version-logo">
-            </a>
-          </div>
-        <div class="menu-block-wrapper">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
-                </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-              <ul class="site-menu-main">
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger"></a>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger"></a>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger"></a>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="index-02.html" class="nav-link-item drop-trigger"style="color: black !important;">Home </a>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger"style="color: black !important;">About Us <i
-                      class="fas fa-angle-down"></i></a>
-                      <ul class="sub-menu shape-none" id="submenu-3">
-                        <li class="sub-menu--item">
-                          <a href="about-us.html">
-                            <span class="menu-item-text">About Us</span>
-                          </a>
-                        </li>
-                        <li class="sub-menu--item">
-                          <a href="team.html">
-                            <span class="menu-item-text">Meet Our Team</span>
-                          </a>
-                        </li>
-                      </ul>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger"style="color: black !important;">Our Programmes <i
-                      class="fas fa-angle-down"></i></a>
-                  <ul class="sub-menu" id="submenu-2">
-                    <li class="sub-menu--item">
-                      <a href="service.html">
-                        <span class="menu-item-text">Programs</span>
-                      </a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="single-service.html">
-                        <span class="menu-item-text">Program details</span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="#" class="nav-link-item drop-trigger"style="color: black !important;">Blog <i
-                      class="fas fa-angle-down"></i></a>
-                  <ul class="sub-menu" id="submenu-9">
-                    <li class="sub-menu--item">
-                      <a href="blog.html">
-                        <span class="menu-item-text">Blog</span>
-                      </a>
-                    </li>
-                    <li class="sub-menu--item">
-                      <a href="single-blog.html">
-                        <span class="menu-item-text">Blog Details</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="contact-us.html" class="nav-link-item"style="color: black !important;">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-        <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-          <a class="aximo-default-btn pill aximo-header-btn" href="contact-us.html">
-            Contact Us
-          </a>
-        </div>
-        <!-- mobile menu trigger -->
-        <div class="mobile-menu-trigger light">
-          <span></span>
-        </div>
-        <!--/.Mobile Menu Hamburger Ends-->
-      </nav>
+  <header 
+  id="sticky-menu" 
+  style="display:flex; justify-content:center; padding:15px 0; background:transparent; position:fixed; top:0; left:0; width:100%; z-index:999;"
+>
+  <div 
+    style="
+      width:75%; 
+      background-color:#fdf6e3; 
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between; 
+      padding:10px 25px; 
+      border-radius:8px; 
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    "
+  >
+    <!-- Logo -->
+    <div>
+      <a href="index-02.html" style="display:flex; align-items:center; text-decoration:none;">
+        <img 
+          src="assets/images/logo/LINDA-LOGO.png" 
+          alt="Logo" 
+          style="height:45px; margin-right:10px;"
+        >
+      </a>
     </div>
-  </header>
+
+    <!-- Navigation Links -->
+    <ul 
+      style="
+        list-style:none; 
+        display:flex; 
+        gap:25px; 
+        margin:0; 
+        padding:0; 
+        font-family:sans-serif; 
+        font-weight:400;
+      "
+    >
+      <li style="position:relative;">
+        <a href="index-02.html" style="text-decoration:none; color:#333;">Home</a>
+      </li>
+
+      <li style="position:relative;">
+        <a href="about-us.html" style="text-decoration:none; color:#333;">About Us</a>
+      </li>
+
+      <!-- Programmes Dropdown -->
+      <li style="position:relative;">
+        <a href="#" style="text-decoration:none; color:#333;">Programmes ▾</a>
+        <ul 
+          style="
+            position:absolute; 
+            top:100%; 
+            left:0; 
+            list-style:none; 
+            margin:0; 
+            padding:10px 0; 
+            background:#fff; 
+            border-radius:6px; 
+            box-shadow:0 2px 6px rgba(0,0,0,0.1); 
+            display:none; 
+            min-width:180px;
+          "
+        >
+          <li><a href="service.html" style="display:block; padding:8px 16px; color:#333; text-decoration:none; font-weight:400;">Programs</a></li>
+          <li><a href="single-service.html" style="display:block; padding:8px 16px; color:#333; text-decoration:none; font-weight:400;">Program Details</a></li>
+        </ul>
+      </li>
+
+      <!-- Blog Dropdown -->
+      <li style="position:relative;">
+        <a href="#" style="text-decoration:none; color:#333;">Blog ▾</a>
+        <ul 
+          style="
+            position:absolute; 
+            top:100%; 
+            left:0; 
+            list-style:none; 
+            margin:0; 
+            padding:10px 0; 
+            background:#fff; 
+            border-radius:6px; 
+            box-shadow:0 2px 6px rgba(0,0,0,0.1); 
+            display:none; 
+            min-width:180px;
+          "
+        >
+          <li><a href="blog.html" style="display:block; padding:8px 16px; color:#333; text-decoration:none; font-weight:400;">Blog</a></li>
+          <li><a href="single-blog.html" style="display:block; padding:8px 16px; color:#333; text-decoration:none; font-weight:400;">Blog Details</a></li>
+        </ul>
+      </li>
+
+      <li style="position:relative;">
+        <a href="contact-us.html" style="text-decoration:none; color:#333;">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Button -->
+    <div>
+      <a 
+        href="contact-us.html" 
+        style="
+          background-color:#e63946; 
+          color:#fff; 
+          padding:8px 16px; 
+          border-radius:20px; 
+          text-decoration:none; 
+          font-weight:400;
+          font-family:sans-serif;
+        "
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Dropdown Hover Script -->
+  <script>
+    document.querySelectorAll('#sticky-menu li').forEach(li => {
+      const submenu = li.querySelector('ul');
+      if(submenu){
+        li.addEventListener('mouseenter', () => submenu.style.display = 'block');
+        li.addEventListener('mouseleave', () => submenu.style.display = 'none');
+      }
+    });
+  </script>
+</header>
   <!--End landex-header-section -->
 
   <div class="aximo-breadcrumb">
